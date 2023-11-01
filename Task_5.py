@@ -3,11 +3,10 @@
 
 
 text = input('Type the text: ')
-mylist = text.title().split(' ')
-
+text_1 = text.title()
 word = 'Пiвдень'
 
-if word in mylist:
+if word in text_1:
     print(True)
 else:
     print(False)
