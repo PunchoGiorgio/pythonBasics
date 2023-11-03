@@ -6,20 +6,12 @@ n1 = int(input("Введіть n1:: "))
 n2 = int(input("Введіть n2:: "))
 n3 = int(input("Введіть n3:: "))
 
-if n1 >= n2 >= n3:
-    print(f'{n1}\n{n2}\n{n3}')
+mylist = [n1, n2, n3]
 
-elif n1 >= n3 >= n2:
-    print(f'{n1}\n{n3}\n{n2}')
+max_numb = max(mylist)
+min_numb = min(mylist)
+middle_numb = sum(mylist) - max_numb - min_numb
 
-elif n2 >= n1 >= n3:
-    print(f'{n2}\n{n1}\n{n3}')
+print(f'{max_numb}\n{middle_numb}\n{min_numb}')
 
-elif n2 >= n3 >= n1:
-    print(f'{n2}\n{n3}\n{n1}')
 
-elif n3 >= n1 >= n2:
-    print(f'{n3}\n{n1}\n{n2}')
-
-elif n3 >= n2 >= n1:
-    print(f'{n3}\n{n2}\n{n1}')
