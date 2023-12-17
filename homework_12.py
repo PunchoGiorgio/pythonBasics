@@ -1,4 +1,3 @@
-
 from awards_data import films_titles, films_awards
 from pathlib import Path
 import string
